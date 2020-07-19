@@ -1,14 +1,16 @@
 {
-    "name": "elephantIO_example_emitter",
-    "version": "3.0.0",
-    "main": "server.js",
-
-    "scripts": {
-        "start": "supervisor --debug server.js"
-    },
-
-    "dependencies": {
-        "socket.io": "~1",
-        "winston": "*"
-    }
+  "name": "elephantIO_example_emitter",
+  "version": "3.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "supervisor --debug server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "socket.io": "~2.0.2",
+    "winston": "*",
+    "snyk": "^1.362.1"
+  },
+  "snyk": true
 }
