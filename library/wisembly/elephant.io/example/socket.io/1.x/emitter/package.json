@@ -8,7 +8,7 @@
     "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "socket.io": "~2.0.2",
+    "socket.io": "~2.4.0",
     "winston": "*",
     "snyk": "^1.362.1"
   },
